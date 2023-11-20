@@ -40,7 +40,16 @@ if (user_age < 18) {
 }
 
 //controll on .log
-console.log(`Qui abbiamo ${km}km e ${user_age}anni di età. Prezzo totale: ${price}€` );
+console.log(
+    `
+    Qui abbiamo ${km} km e ${user_age} anni di età. 
+    Prezzo totale: ${price}€
+    ` 
+    );
+
+//print it on doc
+document.getElementById('price').innerHTML = (`${price} €`)
+
 
 
 
