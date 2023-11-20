@@ -43,13 +43,17 @@ if (user_age < 18) {
 console.log(
     `
     Qui abbiamo ${km} km e ${user_age} anni di età. 
-    Prezzo totale: ${price.toFixed(2)}€
+    Prezzo totale: ${price} €
+    Senza limite ai decimali
     ` 
     );
 
 //print it on doc
 document.getElementById('price').innerHTML = (`${price.toFixed(2)} €`)
 
+//print it on doc. Second method
+const priceElement = document.getElementById('price-second-method');
+priceElement.innerHTML = (`${price.toFixed(1)} €`);
 
 
 
